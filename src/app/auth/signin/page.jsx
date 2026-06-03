@@ -31,8 +31,7 @@ export default function SigninPage() {
                 password,
                 callbackURL: "/" 
             });
-console.log("data:", data);
-console.log("error:", authError);
+
             if (authError) {
                 setError(authError.message || "Invalid email or password.");
             } else {
