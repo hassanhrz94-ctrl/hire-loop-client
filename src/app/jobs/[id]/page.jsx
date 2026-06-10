@@ -1,9 +1,13 @@
 import React from 'react';
-import { getJobById } from '@/lib/api/jobs';
+
 import { Button, Link } from '@heroui/react';
 import { MapPin, Briefcase, CircleDollar, Calendar, ArrowUpRight } from '@gravity-ui/icons';
+import { getJobById } from '@/lib/api/jobs';
+
 
 const Page = async ({ params }) => {
+   
+
     const { id } = await params;
     const job = await getJobById(id);
 

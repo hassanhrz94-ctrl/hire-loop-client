@@ -13,6 +13,7 @@ import { getPlanById } from '@/lib/api/plans';
 import { getJobById } from '@/lib/api/jobs';
 
 
+
 const ApplyPage = async ({ params }) => {
     const { id } = await params;
 
